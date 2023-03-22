@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cart_page.css" />
+    <link rel="stylesheet" href="./sip.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Cart-Page</title>
+</head>
+
+<body>
+    <div class="sideBar w3-display-topright" id="sideBar">
+        <ul>
+            <li><button id="closeBtn" onclick="closeSide()">X Close</button></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact1.html">CONTACT</a></li>
+
+        </ul>
+    </div>
+    <div class="topcont">
+        <div class="w3-container w3-white" id="Bar" width="100%">
+
+            <img src="./photos/download (1).jpg" class="avo-icon" width="70" style="float: left;">
+            <a href="./index.html">
+                <h1 class="avo-title" style="float: left; color:black;">BMS EATS -
+                    <H1 class="hotel_name">CART</H1>
+                </h1>
+            </a>
+            <ul class="topnav" style="padding-top: 0px;">
+
+                <a href="cart_page.html"><i style="float: right;color:black;padding: 14px;"
+                    class="material-icons">shopping_cart</i></a>
+                <li style="float: right;"><a href="./about.html">ABOUT</a></li>
+                <li style="float: right;"><a href="contact1.html">CONTACT</a></li>
+
+            </ul>
+            <button class="menuIcon" id="menuBtn" onclick="openSide()"><i style="padding: 14px;"
+                class="material-icons">menu</i></button>
+        </div>
+    </div>
+    <!-- body starts here  -->
+    <div>
+        <div class="wrap">
+
+            <header class="cart-header cf">
+                <strong>Items in Your Cart</strong>
+
+            </header>
+            <div class="cart-table">
+                <ul>
+                    <li class="item">
+
+                        <div class="item-main cf">
+                            <div class="item-block ib-info cf">
+                                <img class="product-img" src="photos/MASALA DOSA.jpg" />
+                                <div class="ib-info-meta">
+                                    <span class="title">DOSA</span>
+                                </div>
+                            </div>
+                            <div class="item-block ib-qty">
+
+                                <span class="price"><span>plate</span> ₹45/plate</span>
+                            </div>
+                            <div class="item-block ib-total-price">
+                                <span class="tp-price">₹45</span>
+                                <span class="tp-remove"><i class="i-cancel-circle"></i></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="item-main cf">
+                            <div class="item-block ib-info cf">
+                                <img class="product-img" src="photos/IDLI.jpg" />
+                                <div class="ib-info-meta">
+                                    <span class="title">IDLI</span>
+                                </div>
+                            </div>
+                            <div class="item-block ib-qty">
+
+                                <span class="price"><span>plate</span> ₹50/plate</span>
+                            </div>
+                            <div class="item-block ib-total-price">
+                                <span class="tp-price">₹50</span>
+                                <span class="tp-remove"><i class="i-cancel-circle"></i></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="item-main cf">
+                            <div class="item-block ib-info cf">
+                                <img class="product-img" src="photos/SAMOSA.jpg" />
+                                <div class="ib-info-meta">
+                                    <span class="title">SAMOSA</span>
+                                </div>
+                            </div>
+                            <div class="item-block ib-qty">
+
+                                <span class="price"><span>plate</span> ₹20/plate</span>
+                            </div>
+                            <div class="item-block ib-total-price">
+                                <span class="tp-price">₹20</span>
+                                <span class="tp-remove"><i class="i-cancel-circle"></i></span>
+                            </div>
+                        </div>
+                        <div class="item-foot cf">
+                            <!-- <div class="if-message"><p>Space Reserved for item/promo related messaging</p></div> -->
+                            <div class="if-left"><span class="if-status">In Stock</span></div>
+                            <div class="if-right">
+                                <!-- RG -->
+                                <!-- <span class="blue-link">Subscription Options</span> | --><span class="blue-link">Add to Wishlist</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div class="sub-table cf">
+                <div class="summary-block">
+
+                    <ul>
+                        <li class="subtotal"><span class="sb-label">Subtotal</span><span class="sb-value">₹115</span>
+                        </li>
+                        <li class="shipping"><span class="sb-label">Shipping</span><span class="sb-value">₹5</span>
+                        </li>
+                        <li class="tax"><span class="sb-label">GST |<i class="i-notch-down"></i></span></span><span class="sb-value">₹6</span></li>
+                        <li class="tax-calculate"><input type="text" value="06484" class="tax" /><span class="btn">Calculate</span></li>
+                        <li class="grand-total"><span class="sb-label">Total</span><span class="sb-value">₹126</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy-block">
+                    <p>Items will be saved in your cart for 30 days. To save items longer, add them to your <a href="#">Wish List</a>.</p>
+                    <p class="customer-care">
+                        Call us M-F 8:00 am to 6:00 pm IST<br /> +91 9481405640 or <a href="#">contact us</a>. <br />
+                    </p>
+                </div>
+            </div>
+
+            <div class="cart-footer cf">
+                <span class="btn">Checkout</span>
+                <span class="cont-shopping"><i class="i-angle-left"></i>Continue Shopping</span>
+            </div>
+        </div>
+        <script src="./cart_page.js"></script>
+</body>
+
+</html>

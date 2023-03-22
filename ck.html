@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAAPI KUTEERA</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="ck.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="sideBar w3-display-topright" id="sideBar">
+        <ul>
+            <li><button id="closeBtn" onclick="closeSide()">X Close</button></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact1.html">CONTACT</a></li>
+            <li><a href="./cart_page.html">CART</a></li>
+
+        </ul>
+    </div>
+    <div class="topcont">
+        <div class="w3-container w3-white" id="Bar" width="100%">
+
+            <img src="./photos/download (1).jpg" class="avo-icon" width="70" style="float: left;">
+            <a href="./index.html">
+                <h1 class="avo-title" style="float: left; color:black;">BMS EATS -
+                    <H1 class="hotel_name">KAAPI KUTEERA</H1>
+                </h1>
+            </a>
+            <ul class="topnav">
+
+                <a href="./shop.html"><i style="float: right;color:black;padding: 14px;"
+                        class="material-icons">shopping_cart</i></a>
+                <li style="float: right;"><a href="./about.html">ABOUT</a></li>
+                <li style="float: right;"><a href="contact1.html">CONTACT</a></li>
+
+
+            </ul>
+            <button class="menuIcon" id="menuBtn" onclick="openSide()"><i style="padding: 14px;"
+                    class="material-icons">menu</i></button>
+        </div>
+    </div>
+
+    <div class="product-list1">
+        <a href="product-page.html" class="food" onclick="push('TEA/COFFEE','₹10','₹08')">
+            <div class="products">
+                <img src="./photos/TEA COFFEE KAAPI KUTEERA.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">TEA/COFFEE</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹10</h3>
+                        <h3 class="dp">₹08</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('PLAIN MILK','₹10','₹06')">
+            <div class="products">
+                <img src="./photos/PLAIN MILK.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">PLAIN MILK</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹10</h3>
+                        <h3 class="dp">₹06</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('LEMON TEA','₹10','₹08')">
+            <div class="products">
+                <img src="./photos/LEMON TEA.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">LEMON TEA</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹10</h3>
+                        <h3 class="dp">₹08</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('BLACK TEA','₹10','₹06')">
+            <div class="products">
+                <img src="./photos/BLACK TEA.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">BLACK TEA</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹10</h3>
+                        <h3 class="dp">₹06</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('BREAD JAM','₹25','₹20')">
+            <div class="products">
+                <img src="./photos/BREAD JAM.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">BREAD JAM</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹25</h3>
+                        <h3 class="dp">₹20</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('EGG PUFF','₹20','₹15')">
+            <div class="products">
+                <img src="./photos/EGG PUFF.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">EGG PUFF</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹20</h3>
+                        <h3 class="dp">₹15</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('VEG PUFF','₹25','₹20')">
+            <div class="products">
+                <img src="./photos/VEG PUFF.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">VEG PUFF</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹25</h3>
+                        <h3 class="dp">₹20</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('BREAD PAKODA','₹20','₹15')">
+            <div class="products">
+                <img src="./photos/BREAD PAKODA.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">BREAD PAKODA</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹20</h3>
+                        <h3 class="dp">₹15</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('BREAD OMELETE','₹35','₹30')">
+            <div class="products">
+                <img src="./photos/BREAD OMELETE.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">BREAD OMELETE</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹35</h3>
+                        <h3 class="dp">₹30</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('CORN SANDWICH','₹35','₹30')">
+            <div class="products">
+                <img src="./photos/VEG CORN SANDWICH.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">CORN SANDWICH</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹35</h3>
+                        <h3 class="dp">₹30</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('ALOO BUN','₹20','₹15')">
+            <div class="products">
+                <img src="./photos/ALOO BUN.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">ALOO BUN</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹20</h3>
+                        <h3 class="dp">₹15</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="product-page.html" class="food" onclick="push('VEG ROLL','₹40','₹35')">
+            <div class="products">
+                <img src="./photos/VEG ROLLjpg.jpg" class="food-img" />
+                <div class="content">
+                    <h2 class="food-name">VEG ROLL</h2>
+                    <hr class="divider_hr" style="margin: auto; border-top: 1px solid black; width: 80%" />
+                    <div class="prices">
+                        <h3 class="op">₹40</h3>
+                        <h3 class="dp">₹35</h3>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <script src="vk1.js"></script>
+</body>
+
+</html>
